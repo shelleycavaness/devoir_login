@@ -1,0 +1,14 @@
+extends layout
+block content
+    h2 sign in
+    form(action='/users/new_user', method='post')
+        div
+            h5 name 
+            input(type="text", name="name", placeholder="enter name")
+            input(type="text", name="email", placeholder="enter email") 
+            input(type="text", name="username", placeholder="enter username") 
+            input(type="password", name="password", placeholder="enter password")
+            input(type="password", name="confirm", placeholder="confirm pswd")
+        div
+            h5 Validate
+            input(type='submit', value="enter")       
